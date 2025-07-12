@@ -75,12 +75,9 @@ document.querySelector('.mobile-menu-btn').addEventListener('click', toggleMobil
 
 // Form submission handler
 document.querySelector('.cta-form').addEventListener('submit', function(e) {
-    e.preventDefault();
-    const email = this.querySelector('.email-input').value;
-    if (email) {
+    
         alert('Thank you for your interest! We will contact you soon.');
-        this.querySelector('.email-input').value = '';
-    }
+
 });
 
 // Add scroll effect to header

@@ -6,6 +6,14 @@
     box-sizing: border-box;
 }
 
+.video-test {
+    width: 30%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 16px;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+}
+
 html {
     scroll-behavior: smooth;
 }
@@ -708,8 +716,33 @@ body {
 
 /* Responsive Design */
 @media (max-width: 768px) {
+
+    
+.video-test {
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+   border-radius: 16px;
+   box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+}
     .nav-menu {
-        display: none;
+        display: flex;
+        position: absolute;
+        top: -60px;
+        right: 0;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .nav-menu.active{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background: white;
+        width: 100%;
+        padding: 1rem;
+        box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
     }
     
     .mobile-menu-btn {
